@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Segoe UI', sans-serif;
+  background: #f0f4f8;
+  color: #1f2937;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.input-base {
+  width: 100%;
+  border: 1px solid #d7dee8;
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #334155;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.input-base:focus {
+  border-color: #3b82f6;
+}
+
+.check-bounce:active {
+  animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.22);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
